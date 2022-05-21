@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;800&family=Russo+One&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 300;   
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 150vh;
+	background: url("./background.png") no-repeat fixed center;
+	background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+	width: 700px;
+	max-width: 90%;
+}
+
+.box{
+    background-color: #200030;
+    padding: 5%;
+    border-radius: 50px;
+}
+
+.btn{
+    border: none;
+    margin: auto;
+    width: 80%;
+}
+
+.checkout{
+    background: linear-gradient(to right, #ff9500, #ffb700);
+    box-shadow: 0 0 10px #fffffd;
+    font-size: 25px;
+    padding: 1%;
+    animation-name: pulse;
+        animation-duration: 0.8s;
+        animation-timing-function: ease-out;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.white{
+    color: #fffffd;
+}
+
+.space-top{
+    padding: 0 2%;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.bordered{
+    border-radius: 50px;
+}
+
+.shadow{
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.65);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
